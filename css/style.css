@@ -1,0 +1,120 @@
+:root {
+    --bs-very-red-light : hsl(13, 100%, 72%);
+    --bs-red-light : hsl(356, 100%, 66%);
+    --bs-heading-dark-blue : hsl(208, 49%, 24%);
+    --bs-text-white: hsl(0, 0%, 100%);
+    --bs-hover-bg:  hsl(355, 100%, 74%);
+    --bs-bg-gradient-dark: hsl(237, 23%, 32%);
+    --bs-bg-footer : hsl(237, 17%, 21%); 
+}
+
+.bg-very-red-light {
+    background-color: var(--bs-very-red-light);
+}
+
+#section1 {
+    background: var(--bs-very-red-light) center/cover url("../images/bg-pattern-intro-desktop.svg") no-repeat; 
+    color: var(--bs-text-white);
+    z-index: -1;
+}
+.button {
+    background-color: var( --bs-text-white);
+    color: var(--bs-red-light);
+    font-weight: bold;
+}
+.button:hover {
+    color: var(--bs-text-white);
+    background-color: var(--bs-hover-bg);
+}
+.learnMore {
+    background-color: var(--bs-hover-bg) ;
+    color: var(--bs-text-white) ;
+    font-weight: bolder;
+}
+.learnMore:hover {
+    color: var(--bs-red-light);
+    background-color: var( --bs-text-white) ;
+}
+.text-heading {
+    color: var(--bs-heading-dark-blue);
+}
+
+.image>img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.illustration-phone {
+    background: url("../images/illustration-phones.svg") left/cover no-repeat; 
+    width: 50%;
+}
+
+
+.section-rounded {
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    color: var(--bs-text-white);
+    background-color: var(--bs-bg-gradient-dark);
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    z-index: -1;
+}
+
+@media (max-width: 1300px) {
+     .section-rounded {
+        height: 35vh; 
+        top: 40%;
+    } 
+
+    /* .fourth-section {
+        margin-top: 200%;
+    } */
+}
+
+@media (max-width: 1030px) {
+
+    .hamburger-menu {
+        background-color: var(--bs-text-white);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+       margin: 5em;
+        display: none;
+    }
+    .hamburger-active {
+        display: block;
+        align-items: center;
+    }
+
+    .hamburger-menu>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-menu ul li {
+        color: var(--bs-heading-dark-blue);
+    }
+}
+
+
+.bg-footer {
+    background-color: var(--bs-bg-footer);
+    color: var(--bs-text-white);
+}
+
+li {
+    margin-top: 1rem;
+}
+
+li>a {
+    color: var(--bs-text-white);
+    text-decoration: none;
+}
+
+li>a:hover {
+    color: var(--bs-red-light);
+    text-decoration: underline;
+}
